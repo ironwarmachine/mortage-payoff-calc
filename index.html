@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+    <title>Aggro Payment</title>
+</head>
+<body>
+    <div class="main">
+        <div class="heading">
+            <h1 id="callout">Financial Freedom Dashboard</h1>
+        </div>
+        <div class="mortgage-form">
+            <h3>Mortgage Payoff</h3>
+            <form>
+                <label for="mortgage">Enter Mortgage:
+                    <input type="text" name="mortgage" id="mortgage">
+                </label><br><br>
+                <label for="extra-payment">Extra Payment: 
+                    <input type="text" name="extra-payment" id="extra-payment">
+                </label><br><br>
+                <label for="payoff-years">Payoff Years:
+                    <input type="text" name="payoff-years" id="payoff-years">
+                </label>
+            </form>
+            <br>
+            <button class="submit" onclick="getTotal()">Submit</button>
+        </div>
+        <div class="pay-projection-total">
+            <p id="pay-total-value"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
